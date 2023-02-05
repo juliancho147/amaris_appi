@@ -18,3 +18,7 @@ app.secret_key = "test_secret"
 @app.route("/", methods=["GET"])
 def main():
     return make_response(jsonify(["hola"]))
+
+
+if __name__ == "__main__":
+    app.run()
