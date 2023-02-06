@@ -4,6 +4,7 @@ application = Flask(__name__)
 # print a nice greeting.
 @application.route("/",methods=["GET"])
 def say_hello():
+    
     return make_response(jsonify({"hola":"hola"}))
 
 
